@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  dev-postgres:
+    image: postgres:14.4-alpine
+    ports:
+      - 5434:5432
+    environment:
+      POSTGRES_USER: nest-test
+      POSTGRES_PASSWORD: nest-test
+      POSTGRES_DB: nest-test-db
+    restart: always
+    networks:
+      - nest-test
+networks:
+  nest-test:
