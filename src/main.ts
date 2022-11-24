@@ -12,7 +12,7 @@ async function bootstrap() {
     credentials: true,
     origin: [
       'http://localhost:3000',
-      'https://basic-frontend-nextjs.vercel.app/',
+      'https://basic-frontend-nextjs.vercel.app',
     ],
   });
   app.use(cookieParser());
